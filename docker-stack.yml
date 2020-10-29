@@ -114,9 +114,9 @@ services:
       - MM_DBNAME=DOCKERSECRET:mm_db_name
       # pass the edition to be used, default is enterprise
       # setting this env var will make the app use the team edition
-      # - edition=team
+       - edition=team
       # in case your config is not in default location
-      # - MM_CONFIG=/mattermost/config/config.json
+       - MM_CONFIG=/mattermost/config/config.json
     deploy:
       restart_policy:
         condition: on-failure
